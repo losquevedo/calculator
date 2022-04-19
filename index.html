@@ -7,18 +7,29 @@
 
     <title></title>
 
-    <link rel="stylesheet" href="styl.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/favicon.png" />
   </head>
 
   <body>
     <script></script>
-    <div id="calc">
-        <div id="buttons">
-            <button class="calcbutton"></button>
-            <button class="calcbutton"></button>
-            <button class="calcbutton"></button>
+    <main>
+        <div class="calculator">
+            <div class="screen"></div>
+            <div id="buttons-grid">
+                <button id="clearBtn" onclick="">AC</button>
+                <button id="deletBtn" onclick="">DELETE</button>
+                <button class="calcbutton" onclick="">1</button>
+                <button class="calcbutton" onclick="">2</button>
+                <button class="calcbutton" onclick="">3</button>
+                <button class="calcbutton" id="decimalBtn" onclick="">.</button>
+                <button class="calcbutton" id="equalsBtn" onclick="">=</button>
+                <button class="operatorButton" id="plus" onclick="">+</button>
+                <button class="operatorButton" id="minus" onclick="">-</button>
+                <button class="operatorButton" id="multiply" onclick="">x</button>
+                <button class="operatorButton" id="divide" onclick="">÷</button>
+            </div>
         </div>
-    </div>
+    </main>
   </body>
 </html>
