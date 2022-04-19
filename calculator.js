@@ -15,18 +15,20 @@ const multiply = function(num) {
   return num.reduce((a, b) => a * b)
 };
 
-const divide = (numArray, size) => {
-    return numArray.reduce((acc, val, ind)=> {
-        const subIndex = ind % size;
-        if(!Array.isArray(acc[subIndex])) {
-            acc[subIndex] = [val];
-        }
+const divide = (a,b) => {
+    return a / b
 
-        else {
-            acc[subIndex].push(val);
-        };
-        return acc;
-    }, [])
+    // return numArray.reduce((acc, val, ind)=> {
+    //     const subIndex = ind % size;
+    //     if(!Array.isArray(acc[subIndex])) {
+    //         acc[subIndex] = [val];
+    //     }
+
+    //     else {
+    //         acc[subIndex].push(val);
+    //     };
+    //     return acc;
+    // }, [])
 
     // --:First code attempt:--
     // for (let i = 0; index < num.length; i++) {
